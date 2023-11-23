@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Navbar from "./Navbar"
-import 1st from "./1st"
+import First from "./First"
 
 const div = styled.div'
   margin: 0.5rem 1rem;
@@ -15,7 +15,7 @@ const div = styled.div'
 '
 
 const App = () => {
-	return <div> <Navbar/> <1st/> </div>
+	return <div> <Navbar/> <First/> </div>
 }	
 
 export default App;
