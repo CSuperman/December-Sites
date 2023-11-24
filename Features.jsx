@@ -9,8 +9,6 @@ const Div = styled.div`
   }
 `;
 
-// left side of container
-
 const Left = styled.div`
   width: 50%;
   @media only screen and (max-width: 480px) {
@@ -39,10 +37,29 @@ const Title = styled.span`
   }
 `;
 
+const SubTitle = styled.span`
+  font-size: 23px;
+  font-style: italic;
+  color: #555;
+  margin-top: 30px;
+`;
+
 const Details = styled.p`
   font-size: 20px;
   color: #815;
   margin-top: 33px;
+`;
+
+const Button = styled.button`
+  border-radius: 20px;
+  width: 150px;
+  border: none;
+  font-size: 20px;
+  padding: 20px 25px;
+  background-color: darkgreen;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
 `;
 
 const Features = () => {
@@ -57,12 +74,14 @@ const Features = () => {
           <br />
           <b> Dolore </b> la croix
         </Title>
+        <SubTitle> Swag tacos bespoke small batch meditation. </SubTitle>
         <Details>
           Woke air plant pug activated charcoal biodiesel af, lomo distillery lorem 	  tempor coloring book stumptown polaroid you probably haven't heard of them.
         </Details>
         <Details>
           JOMO asymmetrical retro narwhal.
         </Details>
+        <Button> How it Works </Button>
       </Right>
 
     </Div>
