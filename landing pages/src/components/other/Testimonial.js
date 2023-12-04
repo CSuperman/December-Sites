@@ -10,7 +10,7 @@ const Testimonial = () => {
             <section className="content-container">
                 <div className="textArea"> 
                     <h2>Testimonials</h2>
-                    <p>What others say about us.</p>
+                    <p>Gossip about our greatness...</p>
                 </div>
                 <div className="testimonial-container">
                     <img src={usera} alt="Avatar" style={{width:"75px"}}/>
