@@ -1,0 +1,21 @@
+<style>
+	
+body {
+	background-color:
+}
+
+.left {
+  float: left;
+  width: 45%;
+  height: 10%;
+  border: 3px solid #73AD21;
+}
+
+.right {
+  float: right;
+  width: 45%;
+  border: 3px solid #7777;
+}
+
+
+</style>
