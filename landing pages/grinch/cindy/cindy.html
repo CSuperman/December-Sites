@@ -5,8 +5,17 @@
     <meta charset="utf-8" />
     <title></title>
     <link href="heroes.css" rel="stylesheet">
+
+
+
 </head>
 <body>
+
+
+
+    <h1> Image Changer </h1>
+    <img id="img_rand" src="one.jpg">
+
     <h2>  Lou Who, Cindy Lou Who of Whoville </h2>
 
     <p>
@@ -23,5 +32,68 @@
     <div>
         <button> Read more? </button>
     </div>
+
+    <script>
+
+ 
+
+        function myGreeting() {
+            let rand = Math.floor(Math.random() * 3) + 1;
+
+            if (rand === 1) {
+                console.log("msg 1");
+                $("#img_rand").attr("src", "one.jpg");
+            }
+            if (rand === 2) {
+                console.log("msg 2");
+                $("#img_rand").attr("src", "two.jpg");
+            }
+            if (rand === 3) {
+                console.log("msg 3");
+                $("#img_rand").attr("src", "three.jpg");
+            }
+        }
+
+
+    </script>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1> Image Changer </h1>
+    <img id="img_rand" src="one.jpg">
+
+    <script>
+        function myGreeting() {
+            let rand = Math.floor(Math.random() * 3) + 1;
+
+            if (rand === 1) {
+                console.log("msg 1");
+                $("#img_rand").attr("src", "one.jpg");
+            }
+            if (rand === 2) {
+                console.log("msg 2");
+                $("#img_rand").attr("src", "two.jpg");
+            }
+            if (rand === 3) {
+                console.log("msg 3");
+                $("#img_rand").attr("src", "three.jpg");
+            }
+        }
+
+
+    </script>
