@@ -1,6 +1,9 @@
 ﻿html {
     width: 100%;
-    height: 100%
+    height: 100%;
+    background-color: #3c0508;
+    background-image: linear-gradient(to right, #194c15, #194c15 5px, #3c0508 5px, #3c0508 );
+    background-size: 10px 100%;
 }
 
 p {
