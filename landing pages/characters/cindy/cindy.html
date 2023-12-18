@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="heroes.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h2>  Lou Who, Cindy Lou Who of Whoville </h2>
+    <img id="img_rand" src="one.jpg">
+
+    <p class="story-shake">
+        Now, this isn’t your average bedtime story. No, sir! This is the tale of a pint-sized powerhouse with the courage of a lion and the heart of a… well, a Who!
+
+        So, picture this: You’re no taller than a candy cane, living in a world where everything is covered in snow and Christmas cheer is the main food group. Your hairdo defies gravity, and your eyelashes are so long they could be used as ski slopes. Welcome to Cindy Lou’s life!
+
+        Now, Cindy Lou isn’t your typical toddler. Oh no, she’s got the wisdom of an old sage and the spirit of a rockstar. She’s the kind of kid who looks at a green, hairy, Christmas-stealing monster and says, “Hey, you need a hug!”
+
+        And her parents? They’re as clueless as a reindeer in a ballet class. They’re so busy with the holiday hustle and bustle that they don’t notice their daughter is having late-night philosophical chats with the Grinch.
+
+        But here’s the kicker, folks: Cindy Lou doesn’t just melt the Grinch’s heart. She turns it into a marshmallow, roasts it over a fire, and serves it on a platter with a side of Christmas spirit!
+    </p>
+    <div>
+        <button> Read more? </button>
+    </div>
+
+    <script>
+
+        for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                let rand = Math.floor(Math.random() * 3) + 1;
+                switch (rand) {
+                    case 1:
+                        console.log("Returned value: one");
+                        $("#img_rand").attr("src", "one.jpg");
+                        break;
+                    case 2:
+                        console.log("Returned value: two");
+                        $("#img_rand").attr("src", "two.jpg");
+                        break;
+                    case 3:
+                        console.log("Returned value: three");
+                        $("#img_rand").attr("src", "three.jpg");
+                        break;
+                }
+            }, i * 7000); 
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1> Image Changer </h1>
+    <img id="img_rand" src="one.jpg">
+
+    <script>
+        function myGreeting() {
+            let rand = Math.floor(Math.random() * 3) + 1;
+
+            if (rand === 1) {
+                console.log("msg 1");
+                $("#img_rand").attr("src", "one.jpg");
+            }
+            if (rand === 2) {
+                console.log("msg 2");
+                $("#img_rand").attr("src", "two.jpg");
+            }
+            if (rand === 3) {
+                console.log("msg 3");
+                $("#img_rand").attr("src", "three.jpg");
+            }
+        }
+
+
+    </script>
